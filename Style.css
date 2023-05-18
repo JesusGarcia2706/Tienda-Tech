@@ -1,0 +1,232 @@
+    /* Estilos para el encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .inicio {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    right: 110rem;
+    transition: all 0.3s ease-in-out;
+
+  }
+  .inicio:hover{
+    text-shadow: rgba(0,0,0,0.1);
+  }
+  .tienda {
+    font-family: 'Climate Crisis', cursive;
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+    /* Esto es la barra de busqueda*/
+
+    .bar .input_busqueda{
+    padding:10px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+
+    }
+    .bar .boton_busqueda{
+    background-color: crimson;
+    padding: 12px 15px;
+    position: relative;
+    border: 0;
+    top: 0;
+    bottom: 59px;
+    right: 5px;
+    margin: auto;
+    border-radius: 0 5px 5px  0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    
+    }
+    .bar .boton_busqueda:hover {
+    background-color: darkred;
+
+    }
+  
+  .boton_busqueda {
+    background-color: #fff;
+    color: #212121;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* Estilos para la lista de productos */
+  .lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .lista li {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+  }
+  
+  .lista li:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.2);
+  }
+  
+  .sectionlist {
+    max-width: 50%;
+
+
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .copy {
+    margin: 0;
+  }
+  
+  .name {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  
+  /* Estilos para el enlace de YouTube */
+
+  .youtube-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .youtube-container .text_youtube {
+    margin-right: 1rem; /* Agrega un margen a la derecha para separar el texto del botón */
+  }
+
+  .text_youtube {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2em;
+  margin-right: 20px;
+  }
+
+  .youtube button {
+
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+  }
+  
+  .youtube button:hover {
+    transform: scale(1.2);
+  }
+  /* Estilos para el formulario de sugerencias */
+  form {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  form .in_nombre .in_apellido .in_sugerencias{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+  }
+  form button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  form button:hover{
+    background-color: darkred;
+  }
+  
+  @media screen and (max-width: 480px) {
+    header {
+    flex-direction: column;
+    justify-content: center;
+    }
+    .inicio {
+    right: 0;
+    }
+    .tienda {
+    font-size: 3rem;
+    }
+    }
+    
+    @media screen and (max-width: 768px) {
+    .lista li {
+    width: 400px;
+    }
+    .sectionlist {
+    max-width: 80%;
+    }
+    .youtube-container {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .text_youtube {
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+    .youtube button {
+    font-size: 1.5em;
+    }
+    }
+    
+    @media screen and (max-width: 1024px) {
+    .lista li {
+    width: 500px;
+    }
+    .sectionlist {
+    max-width: 60%;
+    }
+    form {
+    max-width: 700px;
+    }
+    }

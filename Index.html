@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tienda </title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="Style.css"/>
+	<link rel="shortcout icon" href="Img/Tienda Icon.png"/>
+	<script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<h2 class="inicio">Inicia sesion</h2>	
+
+		<h1 class="tienda">Tienda</h1>
+
+		<section class="bar">
+			<div>
+				<input class="input_busqueda" type="text" placeholder="Buscar...">
+				<button class ="boton_busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
+			</div>
+		</section>
+
+
+	</header>
+	<main>
+		<nav>
+			<ul class="lista">
+				<li>Torres Armadas
+					<section id= "torre_armadas" class="sectionlist">
+						<img width="300px" src="Img/PC Gamer.jpg" alt="producto">
+					</section>
+				</li>
+				<li>Portátiles
+					<section id="portatiles" class="sectionlist">
+						<img width="300px" src="Img/Portatil.jpg" alt="producto">
+					</section>
+				</li>
+				<li>Compontentes
+					<section id="compontentes" class="sectionlist">
+						<img width="300px" src="Img/Grafica.jpg" alt="producto">
+					</section>
+				</li>
+				<li>Periféricos
+					<section id="perifericos" class="sectionlist">
+						<img width="300px" src="Img/Teclado.jpg" alt="producto">
+					</section>
+				</li>
+
+			</ul>
+		</nav>
+		<br>
+		<div class="youtube-container">
+			<p class="text_youtube">Link Youtube!! => </p>
+			<a class="youtube" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+			  <button>
+				<i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+			  </button>
+			</a>
+		  </div>
+		  
+		<br>
+
+
+
+	</main>
+
+	<footer>
+		<form id="sugerencia" action="/formulario" method="post" class="form">
+			<p>Sugerencias</p>
+			<br>
+			<label for= "nombre"> Nombre </label>
+			<input class ="in_nombre" type="text" id = "nombre" name = "nombre" placeholder="Nombre"/>
+			<br>
+			<label for= "apellido"> Apellido </label>
+			<input class ="in_apellido" type="text" id = "apellido" name = "apellido" placeholder="Apellido"/>
+			<br>
+			<label class ="in_sugerencias" for="sugerencias">Sugerencias</label>
+			<br>
+			<textarea cols="50" rows="10" id="sugerencias" placeholder="Escribe tus sugerencias!" name = "sugerencias"></textarea>
+			<br>
+			<button type="submit"> Enviar </button>
+
+		</form>
+
+		<br>
+
+		<p class="copy">Tienda de objetos &copy; 2023</p>
+		<br>
+		<p class="name">Jesus Alberto Garcia Martinez</p>
+	</footer>
+</body>
+</html>
